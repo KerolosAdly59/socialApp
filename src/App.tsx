@@ -10,7 +10,7 @@ import ProdectedRoute from './Prodectedroute/ProdectedRoute'
 import Profile from './component/Profile/Profile'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import PostDetails from './component/PostDetails/PostDetails'
-import { Offline } from 'react-detect-offline';
+// import { Offline } from 'react-detect-offline';
 
 
 
@@ -40,11 +40,11 @@ function App() {
       <QueryClientProvider client={client}>
     <Toaster/>
     
-      <Offline>
+      {/* <Offline>
         <div className='p-3 rounded-2xl bg-amber-600 fixed top-1/2 start-0'>
           Only shown offline (surprise!)
           </div>
-          </Offline>
+          </Offline> */}
     
     <RouterProvider router={router} />
     </QueryClientProvider>
